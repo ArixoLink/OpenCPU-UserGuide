@@ -1,0 +1,94 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: ArixoIoT
+  product: ArixoIoT
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /aiot_landing_page.html
+      output: web
+
+  - title: Simple Workflow
+    output: web, pdf
+    folderitems:
+
+    - title: Sample 1
+      url: /aiot_sample1.html
+      output: web, pdf
+
+    - title: Sample 2
+      url: /aiot_sample2.html
+      output: web, pdf
+
+    - title: Sample 3
+      url: /aiot_sample3.html
+      output: web, pdf
+
+    - title: Sample 4
+      url: /aiot_sample4.html
+      output: web, pdf
+
+    - title: Sample 5
+      url: /aiot_sample5.html
+      output: web, pdf
+
+  - title: Complex Workflow
+    output: web, pdf
+    folderitems:
+
+    - title: Sample 6
+      url: /aiot_sample6.html
+      output: web, pdf
+
+    - title: Sample 7
+      url: /aiot_sample7.html
+      output: web, pdf
+
+    - title: Sample 8
+      url: /aiot_sample8.html
+      output: web, pdf
+
+    - title: Sample 9
+      url: /aiot_sample9.html
+      output: web, pdf
+
+    - title: Sample 10
+      url: /aiot_sample10.html
+      output: web, pdf
+
+    - title: Sample 11
+      url: /aiot_sample11.html
+      output: web, pdf
+
+    - title: Sample 12
+      url: /aiot_sample12.html
+      output: web, pdf
+
+    - title: Sample 13
+      url: /aiot_sample13.html
+      output: web, pdf
+
+    - title: Sample 14
+      url: /aiot_sample14.html
+      output: web, pdf
+
+# Copyright 2021 Google LLC

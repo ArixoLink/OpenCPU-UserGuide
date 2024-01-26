@@ -9,12 +9,12 @@ entries:
     folderitems:
 
     - title: Automated links bookmark
-      url: /mydoc_hyperlinks.html#automatedlinks
+      url: /opencpu_hyperlinks.html#automatedlinks
 
     - title: Bookmark links
-      url: /mydoc_hyperlinks.html#bookmarklinks
+      url: /opencpu_hyperlinks.html#bookmarklinks
 
     - title: Some link bookmark
-      url: /mydoc_pages.html#someIdTag
+      url: /opencpu_pages.html#someIdTag
 
 # Copyright 2021 Google LLC

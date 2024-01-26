@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
+      external_url: https://github.com/ArixoLink
     - title: News
       url: /news
 
@@ -12,23 +12,30 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Jekyll Help
-      folderitems:
-        - title: Jekyll Talk
-          external_url: https://talk.jekyllrb.com
-        - title: Jekyll documentation
-          external_url: http://jekyllrb.com/docs/home/
-        - title: Jekyll on Stack Overflow
-          external_url: http://stackoverflow.com/questions/tagged/jekyll
-        - title: Jekyll on my blog
-          external_url: http://idratherbewriting.com/category-jekyll/
     - title: Products
       folderitems:
-        - title: Jekyll Documentation Theme
-          url: /mydoc_introduction.html
-        - title: Product 1
-          url: /p1_landing_page.html
-        - title: Product 2
-          url: /p2_landing_page.html
-
+        - title: OpenCPU
+          url: /opencpu_introduction.html
+        - title: WebCommander 
+          url: /wc_landing_page.html
+        - title: ArixoIoT
+          url: /aiot_landing_page.html
+    - title: Supported 5G Modules
+      folderitems:
+        - title: RG500U_CNAB
+          url: /rg500u_cnab.html
+        - title: RG500U_EAAA
+          url: /rg500u_eaaa.html
+        - title: RG200U_CNAA
+          url: /rg200u_cnaa.html
+        - title: RG200U_CNA1
+          url: /rg200u_cna1.html
+        - title: RG520N
+          url: /rg520n.html
+        - title: RM500U_CNVAA
+          url: /rm500u_cnvaa.html
+        - title: RM500U_CNAA
+          url: /rm500u_cnaa.html
+        - title: RM520GL
+          url: /rm520gl.html
 # Copyright 2021 Google LLC

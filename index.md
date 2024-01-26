@@ -2,7 +2,7 @@
 title: "Getting started with the Documentation Theme for Jekyll"
 keywords: sample homepage
 tags: [getting_started]
-sidebar: mydoc_sidebar
+sidebar: opencpu_sidebar
 permalink: index.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 ---
@@ -21,8 +21,8 @@ First, download or clone the theme from the [Github repo](https://github.com/tom
 
 If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
 
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
+* [Install Jekyll on Mac][opencpu_install_jekyll_on_mac]
+* [Install Jekyll on Windows][opencpu_install_jekyll_on_windows]
 
 ### 3. Install Bundler
 
@@ -98,12 +98,12 @@ tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
 summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
-<span class="red">sidebar: mydoc_sidebar</span>
-permalink: mydoc_alerts
+<span class="red">sidebar: opencpu_sidebar</span>
+permalink: opencpu_alerts
 ---
 </pre>
 
-The `sidebar: mydoc_sidebar` refers to the \_data/sidebars/mydoc_sidebar.yml file.
+The `sidebar: opencpu_sidebar` refers to the \_data/sidebars/opencpu_sidebar.yml file.
 
 Note that your sidebar can only have 2 levels (expand the **Tag archives** option to see an example of the second level). Given that each product has its own sidebar, this depth should be sufficient (it's really like 3 levels). Deeper nesting goes against usability recommendations.
 
@@ -129,19 +129,19 @@ If you want to set different sidebar defaults based on different folders for you
 ```
 -
   scope:
-    path: "pages/mydoc"
+    path: "pages/opencpu"
     type: "pages"
   values:
     layout: "page"
     comments: true
     search: true
-    sidebar: mydoc_sidebar
+    sidebar: opencpu_sidebar
     topnav: topnav
 ```
 
-This would load the `mydoc_sidebar` for each file in **pages/mydoc**. You could set different defaults for different path scopes.
+This would load the `opencpu_sidebar` for each file in **pages/opencpu**. You could set different defaults for different path scopes.
 
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation].
+For more detail on the sidebar, see [Sidebar navigation][opencpu_sidebar_navigation].
 
 ## Top navigation
 
@@ -170,7 +170,7 @@ Because most topnav options will be the same, the `_config.yml` file specifies t
 
 ## Sidebar syntax
 
-The sidebar data file uses a specific YAML syntax that you must follow. Follow the sample pattern shown in the theme, specically looking at `mydoc_sidebar.yml` as an example: Here's a code sample showing all levels:
+The sidebar data file uses a specific YAML syntax that you must follow. Follow the sample pattern shown in the theme, specically looking at `opencpu_sidebar.yml` as an example: Here's a code sample showing all levels:
 
 ```yaml
 entries:
@@ -188,7 +188,7 @@ entries:
       type: homepage
 
     - title: Introduction
-      url: /mydoc_introduction.html
+      url: /opencpu_introduction.html
       output: web, pdf
 
   - title: Release Notes
@@ -196,11 +196,11 @@ entries:
     folderitems:
 
     - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
+      url: /opencpu_release_notes_60.html
       output: web, pdf
 
     - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
+      url: /opencpu_release_notes_50.html
       output: web, pdf
 
   - title: Tag archives
@@ -208,7 +208,7 @@ entries:
     folderitems:
 
     - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
+      url: /opencpu_tag_archives_overview.html
       output: web
 
       subfolders:
@@ -233,9 +233,9 @@ Each `folder` or `subfolder` must contain a `title` and `output` property. Each 
 
 The two outputs available are `web` and `pdf`. (Even if you aren't publishing PDF, you still need to specify `output: web`).
 
-The YAML syntax depends on exact spacing, so make sure you follow the pattern shown in the sample sidebars. See my [YAML tutorial](mydoc_yaml_tutorial) for more details about how YAML works.
+The YAML syntax depends on exact spacing, so make sure you follow the pattern shown in the sample sidebars. See my [YAML tutorial](opencpu_yaml_tutorial) for more details about how YAML works.
 
-{% include note.html content="If you have just one character of spacing off, Jekyll won't build due to the YAML syntax error. You'll see an error message in your console that says \"Error ... did not find expected key while parsing a block mapping at line 22 column 5. Error: Run jekyll build --trace for more information.\" If you encounter this, it usually refers to incorrect indentation or spacing in the YAML file. See the example mydoc_sidebar.yml file to see where your formatting went wrong." %}
+{% include note.html content="If you have just one character of spacing off, Jekyll won't build due to the YAML syntax error. You'll see an error message in your console that says \"Error ... did not find expected key while parsing a block mapping at line 22 column 5. Error: Run jekyll build --trace for more information.\" If you encounter this, it usually refers to incorrect indentation or spacing in the YAML file. See the example opencpu_sidebar.yml file to see where your formatting went wrong." %}
 
 Each level must have at least one topic before the next level starts. You can't have a second level that contains multiple third levels without having at least one standalone topic in the second level. If you need a hierarchy that has a folder that contains other folders and no loose topics, use a blank `-` item like this:
 
@@ -256,11 +256,11 @@ entries:
     folderitems:
 
     - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
+      url: /opencpu_release_notes_60.html
       output: web, pdf
 
     - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
+      url: /opencpu_release_notes_50.html
       output: web, pdf
 
   - title: Installation
@@ -268,15 +268,15 @@ entries:
     folderitems:
 
     - title: About Ruby, Gems, Bundler, etc.
-      url: /mydoc_about_ruby_gems_etc.html
+      url: /opencpu_about_ruby_gems_etc.html
       output: web, pdf
 
     - title: Install Jekyll on Mac
-      url: /mydoc_install_jekyll_on_mac.html
+      url: /opencpu_install_jekyll_on_mac.html
       output: web, pdf
 
     - title: Install Jekyll on Windows
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /opencpu_install_jekyll_on_windows.html
       output: web, pdf
 ```
 
@@ -299,7 +299,7 @@ To accommodate the title page and table of contents in PDF outputs, each product
 
 Leave the output as `output: pdf` for these frontmatter pages so that they don't appear in the web output.
 
-For more detail on the sidebar, see [Sidebar navigation][mydoc_sidebar_navigation] and [YAML tutorial][mydoc_yaml_tutorial].
+For more detail on the sidebar, see [Sidebar navigation][opencpu_sidebar_navigation] and [YAML tutorial][opencpu_yaml_tutorial].
 
 ## Comments
 
@@ -339,15 +339,15 @@ If you don't want the mini-TOC to show on a page (such as for the homepage or la
 
 The `permalink` value should be the same as your filename and include the ".html" file extension.
 
-For more detail, see [Pages][mydoc_pages].
+For more detail, see [Pages][opencpu_pages].
 
 ## Where to store your documentation topics
 
 You can store your files for each product inside subfolders following the pattern shown in the theme. For example, product1, product2, etc, can be stored in their own subfolders inside the \_pages directory. Inside \_pages, you can store your topics inside sub-subfolders or sub-sub-folders to your heart's content. When Jekyll builds your site, it will pull the topics into the root directory and use the permalink for the URL.
 
-Note that product1, product2, and mydoc are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
+Note that product1, product2, and opencpu are all just sample content to demonstrate how to add multiple products into the theme. You can freely delete that content.
 
-For more information, see [Pages][mydoc_pages] and [Posts][mydoc_posts].
+For more information, see [Pages][opencpu_pages] and [Posts][opencpu_posts].
 
 ## Configure the top navigation
 
@@ -365,7 +365,7 @@ If you're on Windows, install [Git Bash client](https://git-for-windows.github.i
 
 Open up the css/printstyles.css file and customize the email address (`youremail@domain.com`) that is listed there. This email address appears in the bottom left footer of the PDF output. You'll also need to create a PDF configuration file following the examples shown in the pdfconfigs folder, and also customize some build scripts following the same pattern shown in the root: pdf-product1.sh
 
-See the section on [Generating PDFs][mydoc_generating_pdfs] for more details about setting the theme up for this output.
+See the section on [Generating PDFs][opencpu_generating_pdfs] for more details about setting the theme up for this output.
 
 ## Blogs / News
 
@@ -373,7 +373,7 @@ For blog posts, create your markdown files in the \_posts folder following the s
 
 The news/news.html file displays the posts, and the news_archive.html file shows a yearly history of posts. In documentation, you might use the news to highlight product features outside of your documentation, or to provide release notes and other updates.
 
-See [Posts][mydoc_posts] for more information.
+See [Posts][opencpu_posts] for more information.
 
 ## Markdown
 
@@ -405,7 +405,7 @@ See the topics under "Formatting" in the sidebar for more information.
 
 ## Automated links
 
-If you want to use an automated system for managing links, see [Automated Links][mydoc_hyperlinks.html#automatedlinks]. This approach automatically creates a list of Markdown references to simplify linking.
+If you want to use an automated system for managing links, see [Automated Links][opencpu_hyperlinks.html#automatedlinks]. This approach automatically creates a list of Markdown references to simplify linking.
 
 ## Other instructions
 

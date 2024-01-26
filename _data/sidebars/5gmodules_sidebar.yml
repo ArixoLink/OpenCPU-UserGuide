@@ -1,0 +1,50 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: 5G Modules
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 5G Modules List
+    output: web, pdf
+    folderitems:
+    - title: RG500U_CNAB
+      url: /rg500u_cnab.html
+      output: web
+    - title: RG500U_EAAA
+      url: /rg500u_eaaa.html
+      output: web
+    - title: RG200U_CNAA
+      url: /rg200u_cnaa.html
+      output: web
+    - title: RG200U_CNA1
+      url: /rg200u_cna1.html
+      output: web
+    - title: RG520N
+      url: /rg520n.html
+      output: web
+    - title: RM500U_CNVAA
+      url: /rm500u_cnvaa.html
+      output: web
+    - title: RM500U_CNAA
+      url: /rm500u_cnaa.html
+      output: web
+    - title: RM520GL
+      url: /rm520gl.html
+      output: web
+# Copyright 2021 Google LLC
