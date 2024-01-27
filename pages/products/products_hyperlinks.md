@@ -5,9 +5,9 @@ tags: [formatting, navigation]
 keywords: links, hyperlinks, cross references, related links, relationship tables
 summary: "When creating links, you can use standard HTML or Markdown formatting. However, you can also implement an automated approach to linking that makes linking much less error-prone (meaning less chances of broken links in your output) and requiring less effort."
 last_updated: July 3, 2016
-sidebar: opencpu_sidebar
-permalink: opencpu_hyperlinks.html
-folder: opencpu
+sidebar: products_sidebar
+permalink: products_hyperlinks.html
+folder: products
 ---
 
 ## Create an external link
@@ -23,7 +23,7 @@ When linking to an external site, use Markdown formatting because it's simplest:
 When linking to internal pages, you can manually link to the pages like this:
 
 ```
-[Icons](opencpu_icons.html)
+[Icons](products_icons.html)
 ```
 
 If you change the file name, you'll have to update all of your links.

@@ -1,8 +1,8 @@
 ---
 title: Introduction
-sidebar: opencpu_sidebar
-permalink: opencpu_introduction.html
-folder: opencpu
+sidebar: products_sidebar
+permalink: products_introduction.html
+folder: products
 ---
 
 ## Overview

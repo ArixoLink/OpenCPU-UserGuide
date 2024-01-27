@@ -11,9 +11,6 @@ entries:
     - title: News
       url: /news.html
       output: web
-    - title: OpenCPU instructions
-      url: /opencpu_introduction.html
-      output: web
     - title: WebCommander
       url: /wc_landing_page.html
       output: web

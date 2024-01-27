@@ -4,9 +4,9 @@ tags: [getting_started, formatting, content_types]
 keywords: pages, authoring, exclusion, frontmatter
 last_updated: July 16, 2016
 summary: "This theme primarily uses pages. You need to make sure your pages have the appropriate frontmatter. One frontmatter tag your users might find helpful is the summary tag. This functions similar in purpose to the shortdesc element in DITA."
-sidebar: opencpu_sidebar
-permalink: opencpu_pages.html
-folder: opencpu
+sidebar: products_sidebar
+permalink: products_pages.html
+folder: products
 ---
 
 ## Where to author content
@@ -30,8 +30,8 @@ tags: [formatting]
 keywords: notes, tips, cautions, warnings, admonitions
 last_updated: July 3, 2016
 summary: "You can insert notes, tips, warnings, and important alerts in your content."
-sidebar: opencpu_sidebar
-permalink: opencpu_alerts.html
+sidebar: products_sidebar
+permalink: products_alerts.html
 ---
 ```
 
@@ -66,7 +66,7 @@ exclude:
 
 - filename.md
 - subfolder_name/
-- opencpu_*
+- products_*
 - gitignore
 ```
 
@@ -93,7 +93,7 @@ If you have a lot of HTML, as long as the top and bottom tags of the HTML are fl
 
 ## Page names
 
-I recommend prefixing your page names with the product, such as "opencpu_pages" instead of just "pages." This way if you have other products that also have topics with generic names such as "pages," there won't be naming conflicts.
+I recommend prefixing your page names with the product, such as "products_pages" instead of just "pages." This way if you have other products that also have topics with generic names such as "pages," there won't be naming conflicts.
 
 Additionally, consider adding the product name in parentheses after the title, such as "Pages (Mydoc)" so that users can clearly navigate different topics for each product.
 
@@ -168,7 +168,7 @@ Then you can reference it with a link like this on the same page:
 
 [Some link](#someIdTag)
 
-For details about linking to headings on different pages, see [Automated links to headings on pages][opencpu_hyperlinks.html#bookmarklinks].
+For details about linking to headings on different pages, see [Automated links to headings on pages][products_hyperlinks.html#bookmarklinks].
 
 ## Specify a particular page layout
 
